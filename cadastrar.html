@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./assets/js/cadastrar.js" defer></script>
+  <title>Sweet Bakery</title>
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Sweet Bakery</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/">Produtos</a></li>
+        <li class="active"><a href="cadastrar.html">Cadastrar Produto</a></li>
+        <li><a href="perfil.html">perfil</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h4>Cadastrar Produto</h4>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="titulo" type="text" class="validate" minlength="3">
+            <label for="titulo">Título</label>
+            <span class="helper-text" data-error="Título muito curto. Preencha um título com pelo menos 3 caracteres." data-success="">Digite o nome do produto.</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="descricao" class="materialize-textarea"></textarea>
+            <label for="descricao">Descrição</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="valor" type="number" class="validate" min="1" max="100">
+            <label for="valor">Valor</label>
+            <span 
+              class="helper-text" 
+              data-error="Valor inválido. Informe um valor entre 1 e 100" 
+              data-success="">
+                Digite o valor do produto.
+            </span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <a href="index.html" class="btn grey">cancelar</a>
+          </div>
+          <div class="col">
+            <button id="botao-cadastrar" class="btn">salvar</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </main>
+
+</body>
+
+</html>
